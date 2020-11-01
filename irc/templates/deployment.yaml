@@ -37,7 +37,7 @@ spec:
             - name: IRC_HOST
               value: "chat.freenode.net"
             - name: IRC_PORT
-              value: "6667"
+              value: {{ .Values.service.port2 }}
             - name: IRC_NICK
               value: "hackerbot-js"
             - name: IRC_CHANNEL
@@ -46,10 +46,10 @@ spec:
               value: "1"
           ports:
             - name: http1
-              containerPort: 6667
+              containerPort: {{ .Values.service.port1 }}
               protocol: TCP
             - name: http2
-              containerPort: 3000
+              containerPort: {{ .Values.service.port2 }}
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
