@@ -66,3 +66,4 @@ The attached `docker-compose.yml` file makes this a little prettier.
 
 Parameter | Description | Default
 --- | --- | ---
+`replicaCount`| Set the Number Statefullsets launched| `5`
