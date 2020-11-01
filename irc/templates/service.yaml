@@ -5,11 +5,15 @@ metadata:
   labels:
     {{- include "irc.labels" . | nindent 4 }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .Values.service.type1 }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - port: {{ .Values.service.port1 }}
+      targetPort: {{ .Values.service.port2 }}
       protocol: TCP
-      name: http
+      name: http1
+    - port: {{ .Values.service.port2 }}
+      targetPort: {{ .Values.service.port2 }}
+      protocol: TCP
+      name: http2
   selector:
     {{- include "irc.selectorLabels" . | nindent 4 }}
