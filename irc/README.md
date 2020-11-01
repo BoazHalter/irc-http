@@ -29,11 +29,11 @@ Parameter | Description | Default
 `securityContext.readOnlyRootFilesystem`|| true
 `runAsNonRoot`|| true
 `runAsUser`|| 1000
-`service.type`|| ClusterIP
-`service.port`|| 3000
+`service.type1`|| ClusterIP
+`service.port1`|| 3000
 `service.name1`|| johnny 
-`service.type`|| ClusterIP
-`service.port`|| 6667
+`service.type2`|| ClusterIP
+`service.port2`|| 6667
 `service.name2`|| joey
 `ingress.enabled`|| false
 `ingress.annotations` ||{}
