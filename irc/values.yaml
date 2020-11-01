@@ -5,7 +5,7 @@
 replicaCount: 5
 
 image:
-  repository: 274857556979.dkr.ecr.us-east-1.amazonaws.com/irc-http
+  repository: aws#.dkr.ecr.us-east-1.amazonaws.com/irc-http
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
