@@ -37,8 +37,8 @@ Parameter | Description | Default
 `service.name2`|| joey
 `ingress.enabled`|| false
 `ingress.annotations` ||{}
-`ingress.kubernetes.io/ingress.class`|| nginx
-`ingress.kubernetes.io/tls-acme`|| "true"
+`ingress.annotations.kubernetes.io/ingress.class`|| nginx
+`ingress.annotations.kubernetes.io/tls-acme`|| "true"
 `ingress.hosts.host|| chart-example.local
 `ingress.hosts.paths`|| []
 `ingress.tls`|| []
