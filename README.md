@@ -62,3 +62,7 @@ $ docker run -d --name irc-http -e IRC_HOST=chat.freenode.net -e IRC_PORT=6667 -
 ```
 
 The attached `docker-compose.yml` file makes this a little prettier.
+### Run with Helm on top of Kubernetes
+
+Parameter | Description | Default
+--- | --- | ---
