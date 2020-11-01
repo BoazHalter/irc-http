@@ -12,8 +12,8 @@ $ helm install irc
 Parameter | Description | Default
 --- | --- | ---
 `replicaCount`| Set the Number Statefullsets launched| `5`
-`image.repository`|| aws#.dkr.ecr.us-east-1.amazonaws.com/irc-http
-`image.pullPolicy`||IfNotPresent
+`image.repository`|Docker registry addreess | aws#.dkr.ecr.us-east-1.amazonaws.com/irc-http
+`image.pullPolicy`|in which case to pull the image |IfNotPresent
 `image.tag`|| "latest"
 `imagePullSecrets`|| []
 `nameOverride`|| ""
