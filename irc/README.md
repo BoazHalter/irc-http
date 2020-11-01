@@ -6,6 +6,40 @@ $ helm install irc
 
 ### Run with Helm on top of Kubernetes
 
+## Prerequisites
+  - Kubernetes 1.4+ with Beta APIs enabled
+
+## Introduction
+
+This chart deploy anumber of statefullsets containing irc client
+
+
+## Installing the Chart
+
+To install the chart with the release name `my-release`:
+
+```console
+$ helm install --name my-release irc/
+```
+
+The command deploys irc on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
+
+> **Tip**: List all releases using `helm list`
+
+## Uninstalling the Chart
+
+To uninstall/delete the `my-release` deployment:
+
+```console
+$ helm delete my-release
+```
+
+The command removes all the Kubernetes components associated with the chart and deletes the release.
+
+## Configuration
+
+The following tables lists the configurable parameters of the chart and their default values.
+
 
 
 
